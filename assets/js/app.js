@@ -18,7 +18,7 @@ async function loadComponent(id, file) {
 }
 
 async function loadPage(page) {
-    const response = await fetch(`pages/${page}.html`);
+    const response = await fetch(`Pages/${page}.html`);
     const html = await response.text();
     document.getElementById("content").innerHTML = html;
 }
