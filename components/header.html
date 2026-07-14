@@ -1,0 +1,83 @@
+<header class="bg-white shadow-md sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+        <div class="flex items-center justify-between h-20">
+
+            <!-- Logo -->
+
+            <a href="#" onclick="loadPage('home')" class="flex items-center gap-3">
+
+                <img src="assets/images/logo.png" class="w-14 h-14 object-contain">
+
+                <div>
+
+                    <h2 class="font-bold text-xl text-gray-800">
+                        Santosh Public School
+                    </h2>
+
+                    <p class="text-sm text-gray-500">
+                        English Medium School
+                    </p>
+
+                </div>
+
+            </a>
+
+            <!-- Desktop Menu -->
+
+            <nav class="hidden lg:flex items-center gap-8 font-semibold">
+
+                <a href="#" onclick="loadPage('home')" class="hover:text-red-600 transition">Home</a>
+
+                <a href="#" onclick="loadPage('about')" class="hover:text-red-600 transition">About</a>
+
+                <a href="#" onclick="loadPage('admission')" class="hover:text-red-600 transition">Admission</a>
+
+                <a href="#" onclick="loadPage('blog')" class="hover:text-red-600 transition">Blog</a>
+
+                <a href="#" onclick="loadPage('contact')" class="hover:text-red-600 transition">Contact</a>
+
+            </nav>
+
+            <!-- Mobile Button -->
+
+            <button id="menuBtn"
+                class="lg:hidden text-3xl font-bold">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+
+    <div id="mobileMenu"
+        class="hidden lg:hidden bg-white border-t">
+
+        <a href="#" onclick="loadPage('home')" class="block px-6 py-4 border-b hover:bg-gray-100">
+            Home
+        </a>
+
+        <a href="#" onclick="loadPage('about')" class="block px-6 py-4 border-b hover:bg-gray-100">
+            About
+        </a>
+
+        <a href="#" onclick="loadPage('admission')" class="block px-6 py-4 border-b hover:bg-gray-100">
+            Admission
+        </a>
+
+        <a href="#" onclick="loadPage('blog')" class="block px-6 py-4 border-b hover:bg-gray-100">
+            Blog
+        </a>
+
+        <a href="#" onclick="loadPage('contact')" class="block px-6 py-4 hover:bg-gray-100">
+            Contact
+        </a>
+
+    </div>
+
+</header>
