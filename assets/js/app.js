@@ -1,5 +1,5 @@
 async function loadComponent(id, file) {
-    const response = await fetch(file);
+    const response = await fetch(new URL(`../../${file}`, import.meta.url));
     const html = await response.text();
     document.getElementById(id).innerHTML = html;
 
@@ -19,7 +19,7 @@ async function loadComponent(id, file) {
 
 async function loadPage(page) {
     try {
-        const response = await fetch(`pages/${page}.html`);
+        const response = await fetch(new URL(`../../pages/${page}.html`, import.meta.url));
 
         if (!response.ok) {
             throw new Error(`Unable to load pages/${page}.html`);
